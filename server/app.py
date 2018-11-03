@@ -1,6 +1,6 @@
 from flask import Flask
 import flask_bootstrap
-from .models import Base, engine
+from .models import Base, engine, HostFamily, Refugee
 from flask_sqlalchemy import SQLAlchemy
 import config
 
@@ -17,3 +17,24 @@ flask_bootstrap.Bootstrap(app)
 db = SQLAlchemy(app, metadata=Base.metadata)
 
 import server.views
+
+
+def ratingCalc():
+    rating = 0.0
+
+
+
+    if HostFamily.available_space == Refugee.family_size:
+        rating += 52.0
+    elif HostFamily.available_space > Refugee.family_size:
+        rating += 40
+
+    if
+
+
+
+
+
+
+
+
