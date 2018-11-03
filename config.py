@@ -1,33 +1,9 @@
 
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import Column, Integer, String, DateTime, ForeignKey, create_engine
-from sqlalchemy.orm import relationship
+import os
+from dotenv import load_dotenv, find_dotenv
 
-Base = declarative_base()
+load_dotenv(find_dotenv())
 
-class Refugee(Base):
-    __tablename__ = "Refugees"
-    refugee_id = Column(Integer, primary_key=True)
-    name = Column(String)
-    age = Column(Integer)
-    primary_language = Column(String)
-    secondary_language = Column(String)
-    family_size = Column(Integer)
-    previous_occupation = Column(String)
-
-class HostFamily(Base):
-    __tablename__ = "Host Families"
-    host_id = Column(Integer, primary_key=True)
-    name = Column(String)
-    age = Column(Integer)
-    primary_language = Column(String)
-    secondary_language = Column(String)
-    available_space = Column(Integer)
-    occupation = Column(String)
-    salary = Column(String)
-    location = Column(String)
-
-
-
-
+DATA_FOLDER = os.path.join(os.path.dirname(__file__), "data")
+DATABASE_URL = "sqlite:///" + os.path.join(DATA_FOLDER, "webapp.db")
 
