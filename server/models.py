@@ -26,5 +26,5 @@ class HostFamily(Base):
     secondary_language = Column(String)
     available_space = Column(Integer)
     occupation = Column(String)
-    salary = Column(String)
+    salary = Column(Integer)
     location = Column(String)
