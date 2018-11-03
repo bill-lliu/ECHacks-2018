@@ -1,6 +1,6 @@
 from flask import Flask
 import flask_bootstrap
-from .models import Base, engine
+from .models import Base, engine, HostFamily, Refugee
 from flask_sqlalchemy import SQLAlchemy
 import config
 

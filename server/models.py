@@ -15,6 +15,7 @@ class Refugee(Base):
     secondary_language = Column(String)
     family_size = Column(Integer)
     previous_occupation = Column(String)
+    profile_picture = Column(String)
 
 
 class HostFamily(Base):
@@ -24,7 +25,10 @@ class HostFamily(Base):
     age = Column(Integer)
     primary_language = Column(String)
     secondary_language = Column(String)
+    family_size = Column(Integer)
     available_space = Column(Integer)
     occupation = Column(String)
-    salary = Column(String)
+    salary = Column(Integer)
     location = Column(String)
+    profile_picture = Column(String)
+    preffered_size = Column(Integer)
