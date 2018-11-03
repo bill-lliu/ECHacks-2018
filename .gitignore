@@ -1,6 +1,7 @@
 # Project Things
 .idea/
 .env
+data/webapp.db
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

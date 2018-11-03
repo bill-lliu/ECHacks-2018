@@ -1,4 +1,12 @@
-from server.app import app
+from server.app import app, db
+from server.models import Refugee
+
+
+def populate_database():
+    db.create_all()
+    db.session.add(Refugee(refugee_id=1, name="Guy Morgenshtern", age=17, primary_language="English", secondary_language="Also English", family_size = 1, previous_occupation="Food eater"))
+    db.session.commit()
+
 
 if __name__ == "__main__":
-    app.run()
+    populate_database()
