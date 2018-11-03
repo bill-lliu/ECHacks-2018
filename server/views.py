@@ -1,10 +1,11 @@
 from .app import app, db
 from .models import HostFamily
+from flask import render_template
 
 
 @app.route("/")
 def index():
-    return "Let's get this bread"
+    return render_template("index.jinja2")
 
 
 # Example for Guy
