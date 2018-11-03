@@ -17,24 +17,3 @@ flask_bootstrap.Bootstrap(app)
 db = SQLAlchemy(app, metadata=Base.metadata)
 
 import server.views
-
-
-def ratingCalc():
-    rating = 0.0
-
-
-
-    if HostFamily.available_space == Refugee.family_size:
-        rating += 52.0
-    elif HostFamily.available_space > Refugee.family_size:
-        rating += 40
-
-    if
-
-
-
-
-
-
-
-
