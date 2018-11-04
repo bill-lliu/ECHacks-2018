@@ -1,4 +1,4 @@
-from flask import render_template
+from flask import render_template, jsonify, request
 import core
 from .app import app
 import config
@@ -19,3 +19,8 @@ def home_page():
 @app.route("/about")
 def about_page():
     return "About this project"
+
+
+@app.route("/api", methods=["GET", "POST"])
+def return_json():
+    pass
