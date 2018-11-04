@@ -20,7 +20,7 @@ def home_page():
 
 @app.route("/about")
 def about_page():
-    return "About this project"
+    return "We didn't make an about page, oops"
 
 
 @app.route("/api", methods=["GET", "POST"])
