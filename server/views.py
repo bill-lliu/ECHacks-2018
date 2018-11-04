@@ -14,7 +14,8 @@ def before_first_request():
 @app.route("/home")
 @app.route("/index")
 def home_page():
-    return render_template("index.jinja2")
+    categories = [i.category for i in db.session.query(Location.category).distinct().all()]
+    return render_template("index.jinja2", categories=categories)
 
 
 @app.route("/about")
