@@ -47,4 +47,4 @@ def return_json():
             }
         )
 
-    return str(response)
+    return str(response).replace("\'", "\"")
