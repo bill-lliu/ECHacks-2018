@@ -1,6 +1,12 @@
 from flask import render_template
+import core
 from .app import app
 import config
+
+
+@app.before_first_request
+def before_first_request():
+    core.populate_database()
 
 
 @app.route("/")
