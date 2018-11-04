@@ -1,6 +1,7 @@
 from flask import render_template, jsonify, request
 import core
-from .app import app
+from .app import app, db
+from .models import Location
 import config
 
 
@@ -23,4 +24,24 @@ def about_page():
 
 @app.route("/api", methods=["GET", "POST"])
 def return_json():
-    pass
+    long = request.args.get("long")
+    lat = request.args.get("lat")
+    category = request.args.get("category")
+
+    # print(long, lat, category)
+
+    response = {"Locations": []}
+
+    for location in db.session.query(Location).filter(Location.category == category).all():
+        response["Locations"].append(
+            {
+                "id": location.id,
+                "name": location.name,
+                "description": location.description,
+                "long": location.long,
+                "lat": location.lat,
+                "category": location.category,
+            }
+        )
+
+    return str(response)
