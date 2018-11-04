@@ -1,4 +1,4 @@
-from flask import render_template, jsonify, request
+from flask import render_template, request
 import core
 from .app import app, db
 from .models import Location
@@ -14,7 +14,7 @@ def before_first_request():
 @app.route("/home")
 @app.route("/index")
 def home_page():
-    return "Homepage"
+    return render_template("index.jinja2")
 
 
 @app.route("/about")
@@ -32,7 +32,9 @@ def return_json():
 
     response = {"Locations": []}
 
-    for location in db.session.query(Location).filter(Location.category == category).all():
+    for location in (
+        db.session.query(Location).filter(Location.category == category).all()
+    ):
         response["Locations"].append(
             {
                 "id": location.id,
