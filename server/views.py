@@ -20,7 +20,7 @@ def home_page():
 
 @app.route("/about")
 def about_page():
-    return "We didn't make an about page, oops"
+    return "An active and adaptable location platform designed to help those in need find a safe place"
 
 
 @app.route("/api", methods=["GET", "POST"])
