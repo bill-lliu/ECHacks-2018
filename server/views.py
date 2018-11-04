@@ -20,7 +20,7 @@ def home_page():
 
 @app.route("/about")
 def about_page():
-    return "We didn't make an about page :/"
+    return "About this project"
 
 
 @app.route("/api", methods=["GET", "POST"])
@@ -47,4 +47,4 @@ def return_json():
             }
         )
 
-    return str(response)
+    return str(response).replace("\'", "\"")

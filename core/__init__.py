@@ -18,7 +18,7 @@ def populate_database():
         Location(
             id=2,
             name="North York Harvest Food Bank",
-            description="This food bank usually hosts a winter food drive that accepts nutritious, non-perishable food items that can be dropped off at local fire halls and participating supermarkets in the former borough of North York. It's always in need of volunteers, if that's something you're interested in.: 116 Industry St, York, ON M6M 4L8",
+            description="This food bank usually hosts a winter food drive that accepts nutritious, non-perishable food items that can be dropped off at local fire halls and participating supermarkets in the former borough of North York. It’s always in need of volunteers, if that’s something you’re interested in.: 116 Industry St, York, ON M6M 4L8",
             long=-79.493091,
             lat=43.69414,
             category="Soup Kitchens & Food Banks",
@@ -28,7 +28,7 @@ def populate_database():
         Location(
             id=3,
             name="The Salvation Army",
-            description="This organization's Christmas Kettles campaign is one of its most visible projects (aiming to raise $21 million), but it uses the proceeds to provide essential services throughout the year in the form of food banks and community meals that feed over a million people annually : 107 Cedarvale Ave, East York, ON M4C 4J9",
+            description="This organization’s Christmas Kettles campaign is one of its most visible projects (aiming to raise $21 million), but it uses the proceeds to provide essential services throughout the year in the form of food banks and community meals that feed over a million people annually : 107 Cedarvale Ave, East York, ON M4C 4J9",
             long=-79.311156,
             lat=43.687179,
             category="Soup Kitchens & Food Banks",
@@ -177,7 +177,7 @@ def populate_database():
     db.session.add(
         Location(
             id=18,
-            name="Mary's Home",
+            name="Mary’ s Home",
             description="Mary’s Home can accommodate 38 women, aged 16 years or older, and we welcome women of different ages, cultures, religions.: Society of St Vincent de Paul 70 Gerrard St E Toronto ON M5B 1G6",
             long=-79.328437,
             lat=43.671203,
@@ -197,7 +197,7 @@ def populate_database():
     db.session.add(
         Location(
             id=20,
-            name="Fred Victor Women's Hostel",
+            name="Fred Victor Women’s Hostel",
             description="Women who turn to Fred Victor Women’s Hostel for shelter and support are welcomed into a safe environment. Our 44-bed emergency, overnight shelter is a safe-haven.:86 Lombard St Toronto ON M5C 1M3",
             long=-79.373961,
             lat=43.652307,

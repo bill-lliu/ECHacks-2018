@@ -16,9 +16,7 @@
 
 {% block content %}
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <img src={{ url_for('static', filename='oAIDsis.png') }} width="10%" height="10%" class="d-inline-block align-top" alt="">
-        <a class="navbar-brand" href="/">oAIDsis</a>
-    <a class="navbar-nav" href="/about">About</a>
+        <a class="navbar-brand" href="/">ECHacks 2018</a>
     </nav>
     <div class="dropdown text-center">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
@@ -27,7 +25,7 @@
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             {% for category in categories %}
-                <a class="dropdown-item" href="#">{{ category }}</a>
+                <a class="dropdown-item" onclick="getData(this.text)" href="#">{{ category }}</a>
             {% endfor %}
         </div>
     </div>
