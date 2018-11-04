@@ -10,4 +10,4 @@ class Location(db.Model):
     category = db.Column(db.String(140), nullable=False)
 
     def __repr__(self):
-        return '<Location %s>' % self.name
+        return "<Location %s>" % self.name
