@@ -11,7 +11,7 @@ def populate_database():
             description="Good Shepherd Ministries offer food, shelter, clothing and more to anyone in need. Monetary donations make a big difference in keeping the programs running and the lights and heat on for the long Toronto winter.: 412 Queen St E, Toronto, ON M5A 1T3",
             long=-79.362722,
             lat=43.656446,
-            category="Soup Kitchens & Food Banks",
+            category="Soup Kitchens and Food Banks",
         )
     )
     db.session.add(
@@ -21,7 +21,7 @@ def populate_database():
             description="This food bank usually hosts a winter food drive that accepts nutritious, non-perishable food items that can be dropped off at local fire halls and participating supermarkets in the former borough of North York. It’s always in need of volunteers, if that’s something you’re interested in.: 116 Industry St, York, ON M6M 4L8",
             long=-79.493091,
             lat=43.69414,
-            category="Soup Kitchens & Food Banks",
+            category="Soup Kitchens and Food Banks",
         )
     )
     db.session.add(
@@ -31,7 +31,7 @@ def populate_database():
             description="This organization’s Christmas Kettles campaign is one of its most visible projects (aiming to raise $21 million), but it uses the proceeds to provide essential services throughout the year in the form of food banks and community meals that feed over a million people annually : 107 Cedarvale Ave, East York, ON M4C 4J9",
             long=-79.311156,
             lat=43.687179,
-            category="Soup Kitchens & Food Banks",
+            category="Soup Kitchens and Food Banks",
         )
     )
     db.session.add(
@@ -41,7 +41,7 @@ def populate_database():
             description="The Stop Community Food Centre offers a full spectrum of programs and services designed to increase food access and education, as well as a sense of community and civic engagement, including everything from cooking classes to community advocacy.: 1884 Davenport Rd, Toronto, ON M6N 4Y4",
             long=-79.45394,
             lat=43.670878,
-            category="Soup Kitchens & Food Banks",
+            category="Soup Kitchens and Food Banks",
         )
     )
     db.session.add(
@@ -51,7 +51,7 @@ def populate_database():
             description="The Yonge Street Mission has several different facilities to help those in need, from financially strapped families to newly arrived immigrants, seniors, socially marginalized adults, and homeless youth. No one is ever turned away. Food services is key component of outreach here.: 306 Gerrard St E, Toronto, ON M5A 2G7",
             long=-79.366474,
             lat=43.662474,
-            category="Soup Kitchens & Food Banks",
+            category="Soup Kitchens and Food Banks",
         )
     )
     db.session.add(
@@ -61,7 +61,7 @@ def populate_database():
             description="The Fort York Food Bank has lots of volunteer opportunities on offer, from advocacy and counselling to graphic design and advertising. People can also aid with food sorting and community kitchen shifts, all in an effort to give everyone the chance to learn and grow.:380 College St, Toronto, ON M5T",
             long=-79.405135,
             lat=43.657304,
-            category="Soup Kitchens & Food Banks",
+            category="Soup Kitchens and Food Banks",
         )
     )
     db.session.add(
@@ -71,7 +71,7 @@ def populate_database():
             description="This not-for-profit has various initiatives and projects on the go all year round with proceeds directed toward feeding hungry children and families. Excess fresh food is delivered daily to hundreds of social service programs around the city.: 1450 Lodestar Rd, North York, ON M3J 3C1",
             long=--79.46869,
             lat=43.761126,
-            category="Soup Kitchens & Food Banks",
+            category="Soup Kitchens and Food Banks",
         )
     )
     db.session.add(
@@ -81,7 +81,7 @@ def populate_database():
             description="The Daily Bread Food Bank is where many urgently needed food items can be found: baby food and formula, canned fish and meat, peanut butter, as well as canned fruits and vegetables. It will even help to arrange a pick-up if you have a contribution for their donation drives.: 191 New Toronto St, Etobicoke, ON M8V 2E7",
             long=-79.504103,
             lat=43.60645,
-            category="Soup Kitchens & Food Banks",
+            category="Soup Kitchens and Food Banks",
         )
     )
     db.session.add(
