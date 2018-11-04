@@ -1,4 +1,6 @@
 # ECHacks-2018
-Application developed to help in the organization of allocating Refugees into Canada
+
+
+Helping members of at-risk demographics find help and safe haven quickly.
 
 Program description can be found at https://www.devpost.com/penguinofwinter/ under this project title
